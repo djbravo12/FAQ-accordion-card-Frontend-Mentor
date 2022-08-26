@@ -1,0 +1,103 @@
+$first-BG-Color: hsl(273, 75%, 66%);
+$second-BG-Color: hsl(240, 73%, 65%);
+$text-color: hsl(237, 12%, 33%);
+$active-text-color: hsl(14, 88%, 65%);
+$divider-Color: hsl(240, 5%, 91%);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    body {
+        background-image: linear-gradient($first-BG-Color, $second-BG-Color);
+
+
+        .Main-Box {
+            background-color: $divider-Color;
+            width: 50%;
+            height: 26em;
+            margin: 123px auto;
+            text-align: center;
+            display: flex;
+
+            div {
+                border: 2px solid red;
+
+                .Q-list {
+                    list-style: none;
+                    background-color: blue;
+                    padding: 0px 5px;
+
+                }
+            }
+
+        }
+    }
+
+}
+
+
+@media only screen and (max-width:375px) {
+
+    .Main-Box {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        // height: auto;
+        width: 2222px;
+        margin: 10px auto;
+
+        div {
+
+            .Q-list {
+
+                li {
+                    span {
+                        background-color: white;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+
+// ### Primary
+
+// #### Text
+
+// - Very dark desaturated blue: hsl(238, 29%, 16%)
+// - Soft red: hsl(14, 88%, 65%)
+
+// ### Neutral
+
+// #### Text
+
+// this color is not used yet
+
+
+// - Very dark grayish blue: hsl(237, 12%, 33%)
+// - Dark grayish blue: hsl(240, 6%, 50%)
+
+// #### Dividers
+
+// - Light grayish blue: hsl(240, 5%, 91%)
+
+// ## Typography
+
+// ### Body Copy
+
+// - Font size: 12px
+
+// ### Font
+
+// - Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+// - Weights: 400, 700

@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+* body {
+  background-image: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+}
+* body .Main-Box {
+  background-color: hsl(240deg, 5%, 91%);
+  width: 50%;
+  height: 26em;
+  margin: 123px auto;
+  text-align: center;
+  display: flex;
+}
+* body .Main-Box div {
+  border: 2px solid red;
+}
+* body .Main-Box div .Q-list {
+  list-style: none;
+  background-color: blue;
+  padding: 0px 5px;
+}
+
+@media only screen and (max-width: 375px) {
+  .Main-Box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 2222px;
+    margin: 10px auto;
+  }
+  .Main-Box div .Q-list li span {
+    background-color: white;
+    display: inline-block;
+  }
+}/*# sourceMappingURL=style.css.map */
